@@ -1,10 +1,35 @@
+"Joshua Butke's .vimrc
+""""""""""""""""""""""
+set nocompatible "dont try to be vi compatible
+
+"Plugin manager vim-plug
+"github.com/junegunn/vim-plug
+"""""""""""""""""""""""""""""
+"automatically bootstrap install the plugin manager if it is not installed
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source ~/.vimrc
+endif
+
+"Plugin directory and starting vim-plug
+call plug#begin('~/.vim/plugged')
+
+"Automatically install missing plugins on startup
+if !empty(filter(copy(g:plugs), '!isdirectoy(v:val.dir)'))
+    autocmd VimEnter * PlugInstall | q
+endif
+
+"List of plugins
+Plug 'dracula/vim' "dracula colorscheme 
+
+call plug#end()
+
 "color scheme (terminal)
 set t_Co=256
 set background=dark
 
 "general setup
-set nocompatible "dont try to be vi compatible
-
 set encoding=utf-8
 
 syntax on "enable syntax highlighting
@@ -71,15 +96,3 @@ imap <right> <nop>
 set splitbelow
 set splitright
 
-"Plugin manager vim-plug
-"github.com/junegunn/vim-plug
-if empty(glob('~.vim/autoload/plug.vim'))
-        silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw/githubusercontent.com/junegunn/vim-plug/master/plug.vim
-        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'dracula/vim' "dracula colorscheme 
-
-call plug#end()
