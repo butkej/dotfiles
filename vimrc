@@ -25,14 +25,16 @@ Plug 'dracula/vim' "dracula colorscheme
 
 call plug#end()
 
-"color scheme (terminal)
-set t_Co=256
-set background=dark
-
 "general setup
+filetype plugin indent on "filetype/plugin/indent detection
+
 set encoding=utf-8
 
-syntax on "enable syntax highlighting
+set t_Co=256
+
+set background=dark
+
+syntax enable "enable syntax highlighting
 
 set visualbell "blink cursor on error instead of beeping
 
@@ -58,9 +60,11 @@ set incsearch "search as chars are entered
 
 set hlsearch "highlights search results
 
-filetype indent on "filetype detection
+set ignorecase "makes search case-insensitive
 
 set autoindent "enable autoindent
+
+set smarttab "use tabs at start of a line, spaces elsewhere
 
 "Folding related settings
 set foldenable "enable folding
