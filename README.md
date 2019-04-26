@@ -5,14 +5,14 @@ More configurations might come soon TM...
 ## Specifications
 - Simple vimrc configuration
     - disables arrow keys
-    - sensible defaults similar to tpope [vim-sensible plugin](github.com/tpope/vim-sensible)
-    - binds <ESC> to <jk> 
+    - sensible defaults similar to tpope [vim-sensible plugin](https://github.com/tpope/vim-sensible)
+    - binds `ESC` to `jk`
 
 - Simple bashrc configuration
     - mostly aliases
 
 - Consistent colorscheme settings across terminal-emulator and vim:
-    - [DRACULA](draculatheme.com)
+    - [Dracula Theme](https://draculatheme.com)
 
 ## Installation
 To use this dotfiles repository simply clone it with:  
