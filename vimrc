@@ -50,7 +50,7 @@ set showcmd "show last command in bottom bar
 
 set cursorline "highlights current line cursor is on
 
-set clipboard=unnamedplus "to copy to system clipboard "+y
+set ruler
 
 set wildmenu "autocomplete for command menu
 
@@ -63,8 +63,6 @@ set hlsearch "highlights search results
 set ignorecase "makes search case-insensitive
 
 set autoindent "enable autoindent
-
-set smarttab "use tabs at start of a line, spaces elsewhere
 
 "Folding related settings
 set foldenable "enable folding
