@@ -21,9 +21,9 @@ if !empty(filter(copy(g:plugs), '!isdirectoy(v:val.dir)'))
 endif
 
 "List of plugins
-Plug 'dracula/vim' "dracula colorscheme 
+Plug 'dracula/vim', { 'as': 'dracula' } "dracula colorscheme 
 
-call plug#end()
+call plug#end() "end of plugin manager
 
 "general setup
 filetype plugin indent on "filetype/plugin/indent detection
