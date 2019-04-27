@@ -22,6 +22,7 @@ endif
 
 "List of plugins
 Plug 'dracula/vim', { 'as': 'dracula' } "dracula colorscheme 
+Plug 'itchyny/lightline.vim' "lightweight statusbar
 
 call plug#end() "end of plugin manager
 
@@ -98,3 +99,8 @@ imap <right> <nop>
 set splitbelow
 set splitright
 
+"Configure lightline statusbar
+set laststatus=2
+let g:lightline = {
+    \ 'colorscheme': 'darcula',
+    \ }
