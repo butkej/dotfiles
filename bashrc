@@ -12,7 +12,11 @@ alias grep="grep --color=auto"
 alias la="ls -lhpa --color=auto"
 alias ll="ls -lhpt --color=auto"
 alias b="cd .."
-# work specific
+alias q="exit"
+
+alias push="git push origin master"
+
+# work specific (leibniz desktop computer)
 alias asuka='source activate asuka'
 alias rei='source activate rei'
 alias impact='source deactivate'

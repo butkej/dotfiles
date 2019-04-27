@@ -1,7 +1,7 @@
 # dotfiles
 This repository contains my personal bash and vim configurations which I use at personal and work computers running Linux-based operating systems.  
 More configurations might come soon TM...  
----
+
 ## Specifications
 - Simple vimrc configuration
     - disables arrow keys
