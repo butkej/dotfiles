@@ -99,8 +99,17 @@ imap <right> <nop>
 set splitbelow
 set splitright
 
+"move between splits with CTRL + HJKL
+nnoremap <C-J> <C-W><C-J> 
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 "Configure lightline statusbar
 set laststatus=2
+
+set noshowmode "lightline already shows vim's mode
+
 let g:lightline = {
     \ 'colorscheme': 'darcula',
     \ }
