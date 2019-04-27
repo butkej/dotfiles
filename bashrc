@@ -1,5 +1,6 @@
-# .bashrc
-# Kommentare fangen mit einem Hash an.
+
+# if not running interactively, do not do anything
+[ -z "$PS1" ] && return
 
 #Prompt Customization
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\w\$\[\033[00m\] '
@@ -13,8 +14,20 @@ alias la="ls -lhpa --color=auto"
 alias ll="ls -lhpt --color=auto"
 alias b="cd .."
 alias q="exit"
+alias v="vim"
 
 alias push="git push origin master"
+
+# shell history
+export HISTFILESIZE=1000000
+export HISTSIZE=1000000
+export HISTCONTROL=ignoredups # do not store duplicate commands
+shopt -s histappend # do not overwrite history after each session
+export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history" # Don't record some commands
+
+export HISTTIMEFORMAT='%F %T ' # Useful timestamp format
+
+shopt -s autocd # prepends cd intelligently
 
 # work specific (leibniz desktop computer)
 alias asuka='source activate asuka'
