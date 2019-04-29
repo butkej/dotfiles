@@ -1,4 +1,5 @@
-
+# Joshua Butke's .bashrc
+########################
 # if not running interactively, do not do anything
 [ -z "$PS1" ] && return
 
@@ -15,7 +16,7 @@ alias ll="ls -lhpt --color=auto"
 alias b="cd .."
 alias q="exit"
 alias v="vim"
-
+alias dotfiles="cd ~/dotfiles"
 alias push="git push origin master"
 
 # shell history
