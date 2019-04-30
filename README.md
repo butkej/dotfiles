@@ -17,12 +17,12 @@ More configurations might come soon TM...
 ## Installation
 To use this dotfiles repository simply clone it with:  
 ```
-git clone https://github.com/butkej/dotfiles.git
+$ git clone https://github.com/butkej/dotfiles.git
 ```
 
 Afterwards, simply change into the dotfiles directory, make the script executable and run it:  
 ```
-cd ~/dotfiles
-chmod +x install.sh
-./install.sh
+$ cd ~/dotfiles
+$ chmod +x install.sh
+$ ./install.sh
 ```
