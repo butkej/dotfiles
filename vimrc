@@ -23,6 +23,7 @@ endif
 "List of plugins
 Plug 'dracula/vim', { 'as': 'dracula' } "dracula colorscheme 
 Plug 'itchyny/lightline.vim' "lightweight statusbar
+"Plug 'python-mode/python-mode', { 'branch': 'develop' } 
 
 call plug#end() "end of plugin manager
 
@@ -115,3 +116,6 @@ set noshowmode "lightline already shows vim's mode
 let g:lightline = {
     \ 'colorscheme': 'darcula',
     \ }
+
+"Configure python-mode
+"let g:pymode_python = 'python3'

@@ -7,6 +7,11 @@ More configurations might come soon TM...
     - disables arrow keys
     - sensible defaults similar to tpope [vim-sensible plugin](https://github.com/tpope/vim-sensible)
     - binds `ESC` to `jk`
+    - uses vim-plug as plugin manager
+    - automatically loads missing plugins and installs them
+
+- Plugins:
+    - lightline as a lightweight statusbar
 
 - Simple bashrc configuration
     - mostly aliases
