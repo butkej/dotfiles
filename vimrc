@@ -32,6 +32,8 @@ filetype plugin indent on "filetype/plugin/indent detection
 
 set encoding=utf-8
 
+set autoread "auto read a file again if it is changed from elsewhere
+
 set t_Co=256
 
 set background=dark
@@ -40,7 +42,13 @@ colorscheme dracula
 
 syntax enable "enable syntax highlighting
 
+set history=500 "larger vim history
+
+set so=7 "centers the cursor when scrolling vertically
+
 set visualbell "blink cursor on error instead of beeping
+
+set shiftwidth=4 "also tabs are 4 spaces
 
 set tabstop=4 "number of visual spaces per tab
 
@@ -55,6 +63,8 @@ set showcmd "show last command in bottom bar
 set cursorline "highlights current line cursor is on
 
 set ruler
+
+set wrap "one line is still one line, but vim displays on multiple lines
 
 set wildmenu "autocomplete for command menu
 
@@ -77,7 +87,8 @@ set foldmethod=indent "fold based on indent level
 
 set foldlevel=99
 
-nnoremap <space> za "use the spacebar to toggle fold
+"use the spacebar to toggle fold
+nnoremap <space> za 
 
 "Remap Escape to exit INSERT mode of vim
 inoremap jk <Esc>
@@ -87,7 +98,7 @@ inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
 
-"disable arrow keys in vim (evil, but trains me to become better)
+"disable arrow keys in vim in all modes (evil, but trains a lot)
 map <up> <nop>
 map <left> <nop>
 map <down> <nop>
