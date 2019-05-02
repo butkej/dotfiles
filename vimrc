@@ -23,6 +23,7 @@ endif
 "List of plugins
 Plug 'dracula/vim', { 'as': 'dracula' } "dracula colorscheme 
 Plug 'itchyny/lightline.vim' "lightweight statusbar
+Plug 'christoomey/vim-tmux-navigator' "tmux integration https://github.com/christoomey/vim-tmux-navigator
 "Plug 'python-mode/python-mode', { 'branch': 'develop' } 
 
 call plug#end() "end of plugin manager
