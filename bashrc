@@ -19,18 +19,23 @@ alias v="vim"
 alias dotfiles="cd ~/dotfiles"
 alias push="git push origin master"
 
+# tmux
+alias t='tmux attach -t NERV || tmux new -s NERV'
+
 # shell history
 export HISTFILESIZE=1000000
 export HISTSIZE=1000000
 export HISTCONTROL=ignoredups # do not store duplicate commands
 shopt -s histappend # do not overwrite history after each session
-export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history" # Don't record some commands
+export HISTIGNORE="&:[ ]*:exit:ls:la:ll:bg:fg:history" # Don't record some commands
 
 export HISTTIMEFORMAT='%F %T ' # Useful timestamp format
 
 shopt -s autocd # prepends cd intelligently
 
-# work specific (leibniz desktop computer)
+# work specific (mostly leibniz desktop computer)
+alias bphtunnel='ssh -Y -f -N -L 3333:leibniz:22 sshgw@ssh-gw.bph.rub.de'
+
 alias asuka='source activate asuka'
 alias rei='source activate rei'
 alias impact='source deactivate'
@@ -41,5 +46,25 @@ alias fuer_arne="cd /bph/puredata1/bioinfdata/user/arnrau/Daten/NN_FTIR_Data/fue
 alias work="cd /bph/puredata1/bioinfdata/user/butjos/work/"
 alias samir="cd /bph/puredata1/bioinfdata/user/arnrau/Daten/CARS_UrineBladderCells_Project/first_data_snapshot_090119/analysed_data/"
 
+########################
 # added by Anaconda3 installer
-export PATH="/opt/anaconda/bin:$PATH"
+# export PATH="/opt/anaconda/bin:$PATH"  # commented out by conda initialize
+# see block in >>> <<< below
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/anaconda/etc/profile.d/conda.sh" ]; then
+        . "/opt/anaconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/anaconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+########################
+
