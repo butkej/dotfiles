@@ -38,7 +38,7 @@ alias bph2tunnel='ssh -Y -L 3333:leibniz.prodi.rub.de:2233 butjos@turing.prodi.r
 
 alias asuka='source activate asuka'
 alias rei='source activate rei'
-alias shinji='source activate shinji'
+alias misato='source activate misato'
 alias impact='source deactivate'
 alias note="jupyter notebook"
 
