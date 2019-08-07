@@ -7,14 +7,18 @@ More configurations might come soon TM...
     - disables arrow keys
     - sensible defaults similar to tpope [vim-sensible plugin](https://github.com/tpope/vim-sensible)
     - binds `ESC` to `jk`
-    - uses vim-plug as plugin manager
-    - automatically loads missing plugins and installs them
+    - uses vim-plug as plugin manager (bootstraps automatic self-installation)
+    - automatically loads missing plugins and installs them on first startup of vim
 
 - Plugins:
     - lightline as a lightweight statusbar
+    - vim-tmux-navigator
+    - dracula colortheme
+    - jedi-vim python autocompletion
 
 - Simple bashrc configuration
     - mostly aliases
+    - custom prompt
 
 - Consistent colorscheme settings across terminal-emulator and vim:
     - [Dracula Theme](https://draculatheme.com)

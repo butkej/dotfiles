@@ -20,7 +20,7 @@ alias dotfiles="cd ~/dotfiles"
 alias push="git push origin master"
 
 # tmux
-alias t='tmux attach -t NERV || tmux new -s NERV'
+alias t='tmux attach -t NERV || tmux new -s NERV' # Attaches tmux to the last session; creates a new session if none exists.
 
 # shell history
 export HISTFILESIZE=1000000
@@ -28,16 +28,17 @@ export HISTSIZE=1000000
 export HISTCONTROL=ignoredups # do not store duplicate commands
 shopt -s histappend # do not overwrite history after each session
 export HISTIGNORE="&:[ ]*:exit:ls:la:ll:bg:fg:history" # Don't record some commands
-
 export HISTTIMEFORMAT='%F %T ' # Useful timestamp format
 
 shopt -s autocd # prepends cd intelligently
 
 # work specific (mostly leibniz desktop computer)
 alias bphtunnel='ssh -Y -f -N -L 3333:leibniz:22 sshgw@ssh-gw.bph.rub.de'
+alias bph2tunnel='ssh -Y -L 3333:leibniz.prodi.rub.de:2233 butjos@turing.prodi.rub.de'
 
 alias asuka='source activate asuka'
 alias rei='source activate rei'
+alias shinji='source activate shinji'
 alias impact='source deactivate'
 alias note="jupyter notebook"
 
