@@ -42,6 +42,10 @@ alias misato='source activate misato'
 alias impact='source deactivate'
 alias note="jupyter notebook"
 
+alias pikachu='ssh gpu-imaging2.prodi.rub.de'
+alias virchow='ssh virchow.prodi.rub.de'
+alias ehrlich='ssh ehrlich.prodi.rub.de'
+
 alias master="cd /bph/puredata1/bioinfdata/user/butjos/master/"
 alias fuer_arne="cd /bph/puredata1/bioinfdata/user/arnrau/Daten/NN_FTIR_Data/fuer_arne/"
 alias work="cd /bph/puredata1/bioinfdata/user/butjos/work/"
