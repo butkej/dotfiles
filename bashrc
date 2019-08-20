@@ -42,7 +42,8 @@ alias misato='source activate misato'
 alias impact='source deactivate'
 alias note="jupyter notebook"
 
-alias pikachu='ssh gpu-imaging2.prodi.rub.de'
+alias pikachu='ssh gpu-imaging1.prodi.rub.de'
+alias raichu='ssh gpu-imaging2.prodi.rub.de'
 alias virchow='ssh virchow.prodi.rub.de'
 alias ehrlich='ssh ehrlich.prodi.rub.de'
 
@@ -53,22 +54,22 @@ alias samir="cd /bph/puredata1/bioinfdata/user/arnrau/Daten/CARS_UrineBladderCel
 
 ########################
 # added by Anaconda3 installer
-# export PATH="/opt/anaconda/bin:$PATH"  # commented out by conda initialize
+export PATH="/opt/anaconda/bin:$PATH"  # commented out by conda initialize
 # see block in >>> <<< below
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/anaconda/etc/profile.d/conda.sh" ]; then
-        . "/opt/anaconda/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/anaconda/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+#__conda_setup="$('/opt/anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/opt/anaconda/etc/profile.d/conda.sh" ]; then
+#        . "/opt/anaconda/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/opt/anaconda/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
 # <<< conda initialize <<<
 
 ########################
