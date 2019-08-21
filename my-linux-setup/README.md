@@ -52,7 +52,7 @@ ___
 #### Basic programs:
 - tmux (terminal multiplexer)
 
--   Vim editor (see [dotfiles](https://github.com/butkej/dotfiles) for corresponding .vimrc and .bashrc, use vim-plug as a plugin manager)
+-   Vim editor (see [dotfiles](https://github.com/butkej/dotfiles) for corresponding .vimrc and .bashrc, uses vim-plug as a plugin manager)
 
 -   tlp (battery manager)
 
@@ -64,9 +64,9 @@ ___
 
 -   **Google Chrome** as a major workplace via account (Mail, Docs, Notes, Drive etc.) + major addons (lastpass, adblock, vimium, paperpile, stackedit)
 
--   **Anaconda** Python 3 with **Visual Studio Code** (extensions: python, markdown, dracula theme)
+-   **Anaconda** Python 3 
 
--   Git (integrate into VS Code afterwards)
+-   Git
 
 - [Overleaf](https://www.overleaf.com) as an online LaTeX editor
 
@@ -77,6 +77,7 @@ ___
 -   Steam
 
 -   Spotify
+
 - neofetch (system information)
 
 ---

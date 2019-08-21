@@ -24,7 +24,7 @@ More configurations might come soon TM...
     - [Dracula Theme](https://draculatheme.com)
 ---
 ## Installation
-To use this dotfiles repository simply clone it with:  
+To use this dotfiles repository simply clone it into your home directory with:  
 ```
 $ git clone https://github.com/butkej/dotfiles.git
 ```
@@ -35,3 +35,6 @@ $ cd ~/dotfiles
 $ chmod +x install.sh
 $ ./install.sh
 ```
+
+On the first startup of vim you will encouter errors as the plugin manager installs first itself and then downloads and installs the plugins. Simply quit out and start it again after the downloads finished and it should work completly.  
+
