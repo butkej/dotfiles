@@ -95,6 +95,9 @@ nnoremap <space> za
 "Remap Escape to exit INSERT mode of vim
 inoremap jk <Esc>
 
+"map typing 'run' to clear screen and run the written python script
+nnoremap run <Esc>:w<CR>:!clear;python %<CR>
+
 "Basic bracket pair completion
 inoremap ( ()<Left>
 inoremap [ []<Left>
