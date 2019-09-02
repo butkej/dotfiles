@@ -42,8 +42,8 @@ alias misato='source activate misato'
 alias impact='source deactivate'
 alias note="jupyter notebook"
 
-alias pikachu='ssh gpu-imaging1.prodi.rub.de'
-alias raichu='ssh gpu-imaging2.prodi.rub.de'
+alias shredder='ssh gpu-imaging1.prodi.rub.de'
+alias splinter='ssh gpu-imaging2.prodi.rub.de'
 alias virchow='ssh virchow.prodi.rub.de'
 alias ehrlich='ssh ehrlich.prodi.rub.de'
 
