@@ -95,6 +95,9 @@ nnoremap <space> za
 "Remap Escape to exit INSERT mode of vim
 inoremap jk <Esc>
 
+"configure paste mode to toggle on F2
+set pastetoggle=<F2>
+
 "map typing 'run' to clear screen and run the written python script
 nnoremap run <Esc>:w<CR>:!clear;python %<CR>
 
