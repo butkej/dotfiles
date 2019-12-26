@@ -25,7 +25,6 @@ Plug 'dracula/vim', { 'as': 'dracula' } "dracula colorscheme
 Plug 'itchyny/lightline.vim' "lightweight statusbar
 Plug 'christoomey/vim-tmux-navigator' "tmux integration https://github.com/christoomey/vim-tmux-navigator
 Plug 'davidhalter/jedi-vim', { 'for': 'python' } "autocompletion system with Ctrl+Space
-"Plug 'python-mode/python-mode', { 'branch': 'develop' } 
 
 call plug#end() "end of plugin manager
 
@@ -36,6 +35,8 @@ set encoding=utf-8
 
 set autoread "auto read a file again if it is changed from elsewhere
 
+set nobackup "Disable backup files
+
 set t_Co=256
 
 set background=dark
@@ -44,9 +45,9 @@ colorscheme dracula
 
 syntax enable "enable syntax highlighting
 
-set history=500 "larger vim history
+set history=1000 "larger vim history
 
-set so=7 "centers the cursor when scrolling vertically
+set so=8 "centers the cursor when scrolling vertically
 
 set visualbell "blink cursor on error instead of beeping
 
@@ -54,7 +55,7 @@ set shiftwidth=4 "also tabs are 4 spaces
 
 set tabstop=4 "number of visual spaces per tab
 
-set softtabstop=4 " number of spaces in tab when editing
+set softtabstop=4 "number of spaces when pressing tab
 
 set expandtab "tabs ARE 4 spaces
 
@@ -64,9 +65,9 @@ set showcmd "show last command in bottom bar
 
 set cursorline "highlights current line cursor is on
 
-set ruler
+set ruler "always show cursor position
 
-set wrap "one line is still one line, but vim displays on multiple lines
+set wrap linebreak "one line is still one line, but vim displays on multiple lines
 
 set wildmenu "autocomplete for command menu
 
@@ -88,6 +89,11 @@ set foldlevelstart=10 "open most folds by default
 set foldmethod=indent "fold based on indent level
 
 set foldlevel=99
+
+"File explorer related settings (netrw)
+let g:netrw_liststyle = 3 "show as a tree stucture
+let g:netrw_browse_split = 4 "opens the chosen file in the previous window
+let g:netrw_winsize = 20 "file browser is 20% of window
 
 "use the spacebar to toggle fold
 nnoremap <space> za 
@@ -136,5 +142,4 @@ let g:lightline = {
     \ 'colorscheme': 'darcula',
     \ }
 
-"Configure python-mode
-"let g:pymode_python = 'python3'
+"END OF FILE
