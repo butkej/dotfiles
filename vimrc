@@ -39,8 +39,6 @@ set nobackup "Disable backup files
 
 set t_Co=256
 
-set background=dark
-
 colorscheme dracula
 
 syntax enable "enable syntax highlighting
