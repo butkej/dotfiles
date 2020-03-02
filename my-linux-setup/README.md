@@ -79,6 +79,8 @@ Current Linux Setup with easy to follow steps for installation and maintaining o
 
 - Steam
 
+- Retroarch
+
 - Spotify
 
 - neofetch (system information)
