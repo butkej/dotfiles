@@ -33,8 +33,7 @@ export HISTTIMEFORMAT='%F %T ' # Useful timestamp format
 shopt -s autocd # prepends cd intelligently
 
 # work specific (mostly leibniz desktop computer)
-alias bphtunnel='ssh -Y -f -N -L 3333:leibniz:22 sshgw@ssh-gw.bph.rub.de'
-alias bph2tunnel='ssh -Y -L 3333:leibniz.prodi.rub.de:2233 butjos@turing.prodi.rub.de'
+alias bphtunnel='ssh -p 2233 -Y -L 3333:leibniz.prodi.rub.de:22 butjos@turing.prodi.rub.de'
 
 alias asuka='source activate asuka'
 alias rei='source activate rei'
