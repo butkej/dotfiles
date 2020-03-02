@@ -29,56 +29,61 @@ Current Linux Setup with easy to follow steps for installation and maintaining o
 	- sudo snap remove`package`
 	- sudo snap list (list packages)
 	- sudo snap find `keyword` (search the app store)
-___
 
-#### Customize look and feel:
+---
 
--   Plank dock
+### Customize look and feel:
 
--   [Numix](https://github.com/numixproject/) theme
+- Plank dock
 
--   Numix circle icons
+- [Numix](https://github.com/numixproject/) theme
 
--   install themes and scour every setting to apply the new themes/icons
+- Numix circle icons
 
--   select Background image for session and session manager (login window)
+- install themes and scour every setting to apply the new themes/icons
 
--   set super key to open whisker(start) menu
+- select Background image for session and session manager (login window)
 
--   [dracula theme](https://draculatheme.com/) where possible
-	- eg. [xfce4 terminal](https://gist.github.com/molotovbliss/42e6c1ae54a5922ba720338e5452c2d0)
+- set super key to open whisker(start) menu
+
+- [dracula theme](https://draculatheme.com/) where possible
+    - eg. [xfce4 terminal](https://gist.github.com/molotovbliss/42e6c1ae54a5922ba720338e5452c2d0)
 	- [vim](https://github.com/dracula/vim)
-___
+
+---
+
 #### Basic programs:
 - tmux (terminal multiplexer)
 
--   Vim editor (see [dotfiles](https://github.com/butkej/dotfiles) for corresponding .vimrc and .bashrc, uses vim-plug as a plugin manager)
+- Vim editor (see [dotfiles](https://github.com/butkej/dotfiles) for corresponding .vimrc and .bashrc, uses vim-plug as a plugin manager)
 
--   tlp (battery manager)
+- tlp (battery manager)
 
--   redshift (nightmode)
+- redshift (nightmode)
 
--   mupdf (lightweight pdf reader)
+- mupdf (lightweight pdf reader)
 
 - Okular (feature-rich pdf reader & annotator)
 
--   **Google Chrome** as a major workplace via account (Mail, Docs, Notes, Drive etc.) + major addons (lastpass, adblock, vimium, paperpile, stackedit)
+- **Google Chrome** as a major workplace via account (Mail, Docs, Notes, Drive etc.) + major addons (lastpass, adblock, vimium, paperpile, stackedit)
 
--   **Anaconda** Python 3 
+- **Anaconda** Python 3 
 
--   Git
+- Git
 
 - [Overleaf](https://www.overleaf.com) as an online LaTeX editor
 
--   Thunderbird Mail Client (?)
+- Thunderbird Mail Client (?)
 
--   VLC Media Player
+- VLC Media Player
 
--   Steam
+- Steam
 
--   Spotify
+- Spotify
 
 - neofetch (system information)
+
+- htop (system monitor)
 
 ---
 > Written with [StackEdit](https://stackedit.io/)
