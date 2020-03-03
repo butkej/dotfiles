@@ -17,6 +17,7 @@ More configurations might come soon TM...
     - jedi-vim python autocompletion
 
 - Simple bashrc configuration
+    - editing mode: vi with corresponding .inputrc
     - mostly aliases
     - custom prompt
 
