@@ -3,11 +3,14 @@
 # if not running interactively, do not do anything
 [ -z "$PS1" ] && return
 
-#Prompt Customization
+# Activate vi mode with <Esc>
+set -o vi
+
+# Prompt Customization
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\w\$\[\033[00m\] '
 
 
-#ALIASES
+# ALIASES
 
 # general
 alias grep="grep --color=auto"
