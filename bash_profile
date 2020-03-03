@@ -1,4 +1,4 @@
-#sources .bashrc
+# sources .bashrc
 
 if [ -f $HOME/.bashrc ]; then
     source $HOME/.bashrc
