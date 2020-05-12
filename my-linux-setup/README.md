@@ -36,6 +36,8 @@ Current Linux Setup with easy to follow steps for installation and maintaining o
 
 - Plank dock
 
+- [Ant Dracula Theme](https://gnome-look.org/p/1099856/) 
+
 - [Numix](https://github.com/numixproject/) theme
 
 - Numix circle icons
@@ -73,7 +75,7 @@ Current Linux Setup with easy to follow steps for installation and maintaining o
 
 - [Overleaf](https://www.overleaf.com) as an online LaTeX editor
 
-- Thunderbird Mail Client (?)
+- Thunderbird Mail Client
 
 - VLC Media Player
 
@@ -86,6 +88,8 @@ Current Linux Setup with easy to follow steps for installation and maintaining o
 - neofetch (system information)
 
 - htop (system monitor)
+
+- lynis and clamav (system security and malware detection)
 
 ---
 > Written with [StackEdit](https://stackedit.io/)
