@@ -21,16 +21,24 @@ alias q="exit"
 alias v="vim"
 alias dotfiles="cd ~/dotfiles"
 alias push="git push origin master"
+alias mount_raman="sudo mount -o username=butjos,uid=1201,gid=10000,vers=3.0 //prodi-trsrv/raman joshua/raman_access/" # used on gpu-imaging2 with mkdir -p /tmp/joshua/raman_access
 
 # tmux
 alias t='tmux attach -t NERV || tmux new -s NERV' # Attaches tmux to the last session; creates a new session if none exists.
+
+# jupyter notebook port forwarding
+alias remote-notebook='jupyter notebook --no-browser --port=9999' # used to start a headless notebook on a remote server running on port 9999
+
+function forward-notebook(){ # used to receive the remote notebook (as argument $1) on a local machine with GUI browser // eg. $ forward-notebook virchow 
+    ssh -NfL localhost:9999:localhost:9999 butjos@$1
+}
 
 # shell history
 export HISTFILESIZE=1000000
 export HISTSIZE=1000000
 export HISTCONTROL=ignoredups # do not store duplicate commands
 shopt -s histappend # do not overwrite history after each session
-export HISTIGNORE="&:[ ]*:exit:ls:la:ll:bg:fg:history" # Don't record some commands
+export HISTIGNORE="&:[ ]*:exit:ls:la:ll:bg:fg:history:clear" # Don't record some commands
 export HISTTIMEFORMAT='%F %T ' # Useful timestamp format
 
 shopt -s autocd # prepends cd intelligently
@@ -53,6 +61,8 @@ alias master="cd /bph/puredata1/bioinfdata/user/butjos/master/"
 alias fuer_arne="cd /bph/puredata1/bioinfdata/user/arnrau/Daten/NN_FTIR_Data/fuer_arne/"
 alias work="cd /bph/puredata1/bioinfdata/user/butjos/work/"
 alias samir="cd /bph/puredata1/bioinfdata/user/arnrau/Daten/CARS_UrineBladderCells_Project/first_data_snapshot_090119/analysed_data/"
+
+
 
 ########################
 # added by Anaconda3 installer
