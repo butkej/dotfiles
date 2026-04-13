@@ -1,0 +1,11 @@
+# ALIASES
+
+# general
+alias grep="grep --color=auto"
+alias la="ls -lhpaG"
+alias ll="ls -lhptG"
+alias b="cd .."
+alias q="exit"
+alias v="vim"
+alias cat="bat"
+

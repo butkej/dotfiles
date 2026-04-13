@@ -1,0 +1,20 @@
+[user]
+	name = Joshua Butke
+	email = butkej@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = /Users/butkej/.gitignore
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	side-by-side = true
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://huggingface.co"]
+	provider = generic
