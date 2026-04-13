@@ -181,6 +181,73 @@ The empty `helper =` line before GCM is intentional — it clears the macOS keyc
 
 ---
 
+## Dotfiles Management — yadm
+
+Dotfiles are version-controlled with [yadm](https://yadm.io) and pushed to `github.com/butkej/dotfiles`.
+
+### Day-to-day: after editing a dotfile
+
+```sh
+yadm add -u                     # stage all changes to already-tracked files
+yadm add ~/.some_new_file       # or add a new file explicitly
+yadm status                     # review what's staged
+yadm commit -m "describe change"
+yadm push
+```
+
+### Adding a new file to tracking
+
+```sh
+yadm add ~/.newfile
+yadm commit -m "track newfile"
+yadm push
+```
+
+### Updating the Brewfile (do this periodically or after installing new tools)
+
+```sh
+brew bundle dump --file=~/Brewfile --force
+yadm add ~/Brewfile
+yadm commit -m "update Brewfile"
+yadm push
+```
+
+---
+
+## New MacBook — Full Restore
+
+Run these commands in order. Everything is restored in about 10 minutes (plus download time).
+
+```sh
+# 1. Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# 2. Install yadm
+brew install yadm
+
+# 3. Clone dotfiles — checks out all files into their correct locations in ~
+yadm clone https://github.com/butkej/dotfiles.git
+
+# 4. Reload shell config
+source ~/.zshrc
+
+# 5. Restore all Homebrew packages, casks, and VS Code extensions
+brew bundle install --file=~/Brewfile
+```
+
+After step 3, all dotfiles (`.zshrc`, `.vimrc`, `.tmux.conf`, etc.) are in place.
+After step 5, all tools and VS Code extensions are reinstalled.
+
+**Remaining manual steps after restore:**
+- Re-authenticate git credential manager: `git credential-manager configure` or just attempt a `git push` and follow the prompt
+- Re-authenticate HuggingFace: `huggingface-cli login`
+- Clone SSH keys from a backup (never store these in the dotfiles repo)
+- Install oh-my-zsh if not present: see `https://ohmyz.sh`
+- Install zsh-autosuggestions plugin (see Maintenance Notes below)
+- Open vim and run `:PlugInstall` to install vim plugins
+
+---
+
 ## Maintenance Notes
 
 - **oh-my-zsh updates:** runs automatically; or `omz update`
